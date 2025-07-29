@@ -1,0 +1,21 @@
+{
+  "name": "cocos-platforms-types",
+  "version": "0.0.1",
+  "description": "cocos适配各平台的类型定义",
+  "keywords": [
+    "cocos-types"
+  ],
+  "homepage": "https://github.com/wtto00/cocos-platforms-types#readme",
+  "bugs": {
+    "url": "https://github.com/wtto00/cocos-platforms-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtto00/cocos-platforms-types.git"
+  },
+  "license": "MIT",
+  "author": "wtto00 <wtto00@outlook.com>",
+  "files": [
+    "huawei.d.ts"
+  ]
+}
