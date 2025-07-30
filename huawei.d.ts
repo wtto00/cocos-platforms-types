@@ -251,9 +251,20 @@ declare namespace QG {
   function exitApplication(options?: BaseOptions<void, void>): void;
   //#endregion
 
-  //#region 设备震动
+  //#region 设备-震动
   function vibrateShort(options?: BaseOptions<void, void>): void;
   function vibrateLong(options?: BaseOptions<void, void>): void;
+  //#endregion
+
+  //#region 设备-剪贴板
+  /** 获取系统剪贴板的内容。 */
+  function getClipboardData(options: BaseOptions<{ data: string }>): void;
+  interface SetClipboardDataOptions extends BaseOptions<void> {
+    /** 剪贴板的内容。 */
+    data: string;
+  }
+  /** 设置系统剪贴板的内容。 */
+  function setClipboardData(options: SetClipboardDataOptions): void;
   //#endregion
 
   interface SystemInfo {
@@ -324,7 +335,7 @@ declare namespace QG {
    * 获取系统信息（同步方法）。
    * @version 1078
    */
-  function getSystemInfoSync(): void;
+  function getSystemInfoSync(): SystemInfo;
 
   //#region 广告API
   /**
