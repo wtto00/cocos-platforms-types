@@ -1823,6 +1823,8 @@ declare namespace QG {
     hideDownloadButton(options: NativeAdHideDownloadButtonOptions): void;
     /** 销毁原生广告 */
     destroy(): void;
+    /** 获取下载状态。 */
+    getAppStatus(options: { adId: string }): string
   }
 
   /** 创建原生广告 (1075+) */
